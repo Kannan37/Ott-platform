@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media (max-width:1200px) {
+        font-size: 45%;
+    }
+}
+
+.header{
+    height: 5rem;
+    width: 100%;
+    background-color: #191919;
+    display: flex;
+}
+
+ /* .logo h2{
+    color: white;
+    font-size: rem;
+}  */
+.head-content{
+    display: flex;
+    width: 100%;
+    /* justify-content: space-between; */
+    color: white;
+    /* margin: 1rem 3rem; */
+    align-items: center;
+    
+}
+.title{
+    font-size: 4.5rem;
+
+}
+
+
+.input{
+    position: absolute;
+    font-size: 2.5rem;
+    /* transform: translateX(70rem); */
+    right: 20rem;
+    
+}
+
+/* .input:focus{
+    border: none;
+} */
+
+.search{
+    background-color:#373333;
+    border-radius: 1rem;
+    height: 3rem;
+    width: 30rem;
+    text-decoration: none;
+    padding: 1rem;
+    border: none;
+    opacity: .5;
+}
+.search:focus{
+    outline: none;
+    color: white;
+    opacity: 1;
+}
+
+.profile{
+    display: flex;
+    position: absolute;
+    right: 2rem;
+}
+
+.profile-name{
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.profile-img img{
+    height: 4rem;
+}
+
+.logo img{
+    display: flex;
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.container{
+    width: 100%;
+    height: 200vh;
+    background-image: linear-gradient(to right bottom ,#0b0b0b ,#000);
+    display: flex;
+    @media (max-width:1200px) {
+        height: 150vh;
+    }
+}
+
+.nav{  
+    display: flex;
+    width: 25rem;
+    background-color: #0b0b0b;
+    position: relative;
+    z-index: 100;
+}
+
+.nav-contents{
+    position: absolute;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    
+}
+
+.item{
+    padding: 1.5rem 7rem 1.5rem 7rem;
+    
+}
+
+.item a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.item:hover{
+    background-color: rgb(88, 153, 227);
+    transition: all 2s;
+}
+
+.main{
+    width: 84%;
+}
+
+.content_1{
+    z-index: 10;
+    width: 100%;
+}
+
+.ott-img1{
+    display: flex;
+    /* background-image: url("images/cric.jpg");
+    background-size: cover; */
+    width: 100%;
+    height: 50rem;
+    position: relative;
+}
+
+.ott-img1 img{
+    width: 100%;
+}
+
+.about1{
+    width: 25%;
+    position: absolute;
+    top: 30rem;
+    left: 5rem;
+    color: white;
+    font-size: 4.5rem;
+}
+.detail1{
+    font-size: 5rem;
+    
+}
+
+.content_2, .content_3,.content_4{
+    color: white;
+    margin: .5rem;
+    font-size: 5rem;
+}
+
+.movies-img , .Platform-img,.sport-img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: inherit;
+}
+.Platform, .movie ,.sport{
+    display: inline-block;
+    width: 30rem;
+    height: 23rem;
+    border: rgb(105, 101, 101) solid 2px;
+    border-radius: 2rem;
+    margin: 2rem;
+    overflow: hidden;
+    transition: all .2s;
+}
+
+.Platform img ,.movie img,.sport img{
+    width: 100%;
+    height:16rem;
+}
+
+.Platform-name{
+    padding: 5rem;
+    font-size: 4.5rem;
+}
+
+.movie-name{
+    padding: 7rem;
+    font-size: 4.5rem;
+}
+
+.sport-name{
+    padding: 5rem;
+    font-size: 3.5rem;
+}
+
+.Platform:hover, .movie:hover,.sport:hover{
+    border: white solid 2px;
+    transform: scale(1.15);
+}
+
